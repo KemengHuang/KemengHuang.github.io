@@ -1,0 +1,35 @@
+/* Custom sidebar scrolling enhancement */
+/* Enable internal scrolling for right sidebar */
+.column-right {
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+/* Fine-tune scrollbar appearance for better UX */
+.column-right::-webkit-scrollbar {
+  width: 6px;
+}
+.column-right::-webkit-scrollbar-track {
+  background: transparent;
+}
+.column-right::-webkit-scrollbar-thumb {
+  background: #d3d3d3;
+  border-radius: 3px;
+}
+.column-right::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+/* Firefox scrollbar styling */
+.column-right {
+  scrollbar-width: thin;
+  scrollbar-color: #d3d3d3 transparent;
+}
+/* Add padding to prevent content from being hidden by scrollbar */
+.column-right .widget {
+  margin-bottom: 1rem;
+}
+/* Ensure widgets don't overflow */
+.column-right .widget:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0.5rem;
+}
