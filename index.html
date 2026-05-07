@@ -33,52 +33,128 @@
   2023 - We have opensourced a highly optimized <strong>GPU SPH</strong> framework. While the code design may not be perfect, the underlying parallel concept is clear and robust. Hope it can be helpful for high performance simulation learners.
 </p>
 
-<h3 id="PROJECTS"><a href="#PROJECTS" class="headerlink" title="PROJECTS"></a><strong>PROJECTS</strong></h3><ol>
-<li><strong>LIBUIPC</strong> (Both <strong><font color=red>C++</font></strong> and <strong><font color=red>Python</font></strong> API are provided)<br><a href="https://spirimirror.github.io/libuipc-web/">[project page]</a> <a href="https://spirimirror.github.io/libuipc-doc/">[instruction]</a> <a href="https://github.com/spiriMirror/libuipc-samples">[python examples]</a><br>Libuipc is a library that offers a unified GPU incremental potential contact framework for simulating the dynamics of rigid bodies, soft bodies, cloth, and threads. It ensures accurate, penetration-free frictional contact and is naturally differentiable. Libuipc aims to provide robust and efficient forward and backward simulations, making it easy for users to integrate with machine learning frameworks, inverse dynamics, robotics, and more.</li>
-</ol>
-<!--2. **DiverseShot**
-   [[Website]](https://www.diverseshot.com/) [[Video]](https://www.youtube.com/watch?v=KAh0oMOBS4o&t=12s)
-   DiverseShot is a free software tool designed to transform videos into immersive 3D experiences. It allows anyone to effortlessly create photorealistic 3D scenes that are accessible via a web browser, all without requiring any coding skills. The software is compatible with Windows, Linux, and macOS.-->
 
-<h3 id="RECENT-RESEARCH"><a href="#RECENT-RESEARCH" class="headerlink" title="RECENT RESEARCH "></a><strong>RECENT RESEARCH</strong> <!--(<font color=orange>orange-colored works are my favorite</font>)--></h3><ol>
-<li><p><strong>YASPS: A Symbolic Framework for Extensible, High-Performance IPC Simulation</strong>[J].<br>Xuan Tang, <strong>Kemeng Huang</strong>, Gilbert Bernstein, Minchen Li, Tzumao Li.<br><strong>ACM Transaction on Graphics</strong>, 2026. (SIGGRAPH 2026)<br>[paper][video][source code] (coming soon)</p>
-<img src="/img/YASPS.jpg" width="500px" />
-</li>
-<li><p><strong>Efficient B-Spline Finite Elements for Cloth Simulation</strong>[J].<br>Yuqi Meng, Yihao Shi, <strong>Kemeng Huang</strong>, Zixuan Lu, Ning Guo, Taku Komura, Yin Yang, Minchen Li.<br><strong>ACM Transaction on Graphics</strong>, 2026. (SIGGRAPH 2026)<br>[paper]<a href="https://arxiv.org/pdf/2506.18867">[arxiv]</a><a href="https://www.youtube.com/watch?v=Mic1pfp33fI">[video]</a><a href="https://simulation-intelligence.github.io/BS-Cloth/">[project page (code)]</a></p>
-<img src="/img/BSPLINE.jpg" width="500px" />
-</li>
-<li><p><strong>AGIPC: Adaptive In-Solve Algebraic Coarsening for GPU IPC</strong>[C].<br>Xuan Wang, Zhaofeng Luo, Minchen Li, Taku Komura, <strong>Kemeng Huang#</strong>.<br><strong>SIGGRAPH 2026 Conference Paper</strong>.<br>[paper]<a href="https://arxiv.org/abs/2605.04773">[arxiv]</a><a href="https://youtu.be/W4h_rcuEXvw">[video]</a>[source code] (coming soon)</p>
-<img src="/img/AGIPC.jpg" width="500px" />
-</li>
-<li><p><strong>MAS-PNCG: An Efficient Multilevel Preconditioned Nonlinear Conjugate Gradient Method for Incremental Potential Contact</strong>.<br>Yu Zhang*, Xing Shen*,  <strong>Kemeng Huang#</strong>, Wei Chen, Yin Yang, Taku Komura, Tiantian Liu, Xingang Pan.<br><a href="/img/maspncg.pdf"><strong>Preprint</strong></a> 2026 <a href="https://arxiv.org/abs/2604.19892">[arxiv]</a></p>
-<img src="/img/teaser_zoomin.jpg" width="500px" />
-</li>
-<li><p><strong>SmokeSVD: Smoke Reconstruction from A Single View via Progressive Novel View Synthesis and Refinement with Diffusion Models</strong>[C].<br>Chen Li*, Shanshan Dong*, Sheng Qiu, Jianmin Han, Yibo Zhao, Zan Gao, Taku Komura, <strong>Kemeng Huang</strong>.<br><strong>The IEEE&#x2F;CVF Conference on Computer Vision and Pattern Recognition</strong>, 2026. (CVPR 2026, <font color=red>Oral Paper & Award Candidate, Top 0.5%</font>)<br><a href="/img/smokeSVD.pdf">[paper]</a> <a href="https://arxiv.org/abs/2507.12156">[arxiv]</a> <a href="https://youtu.be/UE4sH1niy4o">[video]</a> <a href="https://github.com/dongss414/SmokeSVD">[source code]</a></p>
-<img src="/img/smokesvd.png" width="500px" />
-</li>
-<li><p><strong>PAT3D: Physics-Augmented Text-to-3D Scene Generation</strong>[C].<br>Guying Lin, <strong>Kemeng Huang</strong>, Michael Liu, Ruihan Gao, Hanke Chen, Lyuhao Chen, Beijia Lu, Taku Komura, Yuan Liu, Jun-Yan Zhu, Minchen Li.<br><strong>International Conference on Learning Representations</strong>, 2026. (ICLR 2026)<br><a href="https://openreview.net/pdf?id=iIRxFkeCuY">[paper]</a> <a href="https://arxiv.org/abs/2511.21978">[arxiv]</a> <a href="https://simulation-intelligence.github.io/PAT3D/">[project page (code)]</a></p>
-<img src="/img/pat3d.png" width="500px" />
-</li>
-<li><p><strong>StiffGIPC: Advancing GPU IPC for Stiff Affine-Deformable Simulation</strong>[J].<br><strong>Kemeng Huang</strong>, Xinyu Lu, Huancheng Lin, Taku Komura, Minchen Li.<br><strong>ACM Transaction on Graphics</strong>, 2025. (SIGGRAPH 2025)<br><a href="https://doi.org/10.1145/3735126">[paper]</a> <a href="https://arxiv.org/abs/2411.06224">[arxiv]</a> <a href="https://www.youtube.com/watch?v=3TBoTX2vag4&list=LL">[video]</a> <a href="https://github.com/KemengHuang/Stiff-GIPC">[source code]</a></p>
-<img src="/img/ugipc-teaser.JPG" width="500px" />
-</li>
-<li><p><strong>GIPC: Fast and Stable Gauss-Newton Optimization of IPC Barrier Energy</strong>[J].<br><strong>Kemeng Huang</strong>, Floyd M. Chitalu, Huancheng Lin, Taku Komura.<br><strong>ACM Transaction on Graphics</strong>, 2024. (SIGGRAPH 2024)<br><a href="https://doi.org/10.1145/3643028">[paper]</a> <a href="https://arxiv.org/abs/2308.09400">[arxiv]</a> <a href="/img/ipc_paper-suppl.pdf">[suppDoc]</a> <a href="https://youtu.be/5rwp6AiHtrw">[video]</a> <a href="https://github.com/KemengHuang/GPU_IPC">[source code]</a> <a href="https://www.i-cable.com/%e6%96%b0%e8%81%9e%e8%b3%87%e8%a8%8a/282334/%E6%99%BA%E5%89%B5%E6%9C%AA%E4%BE%86-%E5%89%B5%E6%96%B0%E7%A7%91%E6%8A%80%E6%94%B9%E9%9D%A9%E8%A3%BD%E8%A1%A3%E6%A5%AD">[i-cable news]</a></p>
-<img src="/img/gipcT.png" width="500px" /> 
-</li>
-<li><p><strong>A Novel Plastic Phase-Field Method for Ductile Fracture with GPU Optimization</strong>[J].<br>Zipeng Zhao<strong>*</strong>, <strong>Kemeng Huang*</strong>, Chen Li, Changbo Wang, Hong Qin.<br><strong>Computer Graphics Forum</strong>, 2020 (PG 2020).<br><a href="/img/CGF-WORK.pdf">[Paper]</a> <a href="https://www.youtube.com/watch?v=TjBdFXWkrAQ">[video]</a> <a href="https://github.com/KemengHuang/Explicit-GPUMPM-Ductile-Fracture">[source code]</a> </p>
-<img src="/img/pgcgf.jpg" width="500px" /> 
-</li>
-<li><p><strong>Novel Hierarchical Strategies for SPH-centric Algorithms on GPGPU</strong>[J].<br>   <strong>Kemeng Huang</strong>, Zipeng Zhao, Chen Li, Changbo Wang, Hong Qin.<br>   <strong>Graphical Models</strong>, 2020.<br>   <a href="/img/GMOD-WORK.pdf">[Paper]</a> <a href="https://www.youtube.com/watch?v=XOugvO3Z_K4">[video]</a> <a href="https://github.com/KemengHuang/Fastest-SPH-framework">[source code]</a> </p>
-   <img src="/img/gmb.jpg" width="500px" /> 
-</li>
-<li><p><strong>A General Novel Parallel Framework for SPH-centric Algorithms</strong>[J].<br><strong>Kemeng Huang</strong>, Jiming Ruan, Zipeng Zhao, Chen Li, Changbo Wang, Hong Qin.<br><strong>Proceedings of the ACM on Computer Graphics and Interactive Techniques</strong>, 2019 (I3D 2019).<br><a href="/img/i3dpaper.pdf">[Paper]</a> <a href="https://www.youtube.com/watch?v=1yT7BIiW3ws">[video]</a>  <a href="https://github.com/KemengHuang/Fastest-SPH-framework">[source code]</a> </p>
-<img src="/img/i3d.jpg" width="500px" /></li>
+<a href="#PROJECTS" class="headerlink" title="PROJECTS"></a>
+  <strong>PROJECTS</strong>
+</h3>
+<ol>
+  <li>
+    <strong>LIBUIPC</strong> (Both <strong><font color="red">C++</font></strong> and <strong><font color="red">Python</font></strong> API are provided)
+    <br>
+    <a href="https://spirimirror.github.io/libuipc-web/">[project page]</a>
+    <a href="https://spirimirror.github.io/libuipc-doc/">[instruction]</a>
+    <a href="https://github.com/spiriMirror/libuipc-samples">[python examples]</a>
+    <br>
+    Libuipc is a library that offers a unified GPU incremental potential contact framework for simulating the dynamics of rigid bodies, soft bodies, cloth, and threads. It ensures accurate, penetration-free frictional contact and is naturally differentiable. Libuipc aims to provide robust and efficient forward and backward simulations, making it easy for users to integrate with machine learning frameworks, inverse dynamics, robotics, and more.
+  </li>
 </ol>
-<!--6. **One Improved Real-Time Infrared Simulation System Based on Unity3D**[J]. 
-   Zhang Fan, Wang Tong, **Huang Kemeng**, Mao Jiaming, Li Meiling, Wang Zhangye.    
-   *Journal of Computer-Aided Design & Computer Graphics, 2018.*   
-   [[Paper]](https://www.jcad.cn/cn/article/doi/10.3724/SP.J.1089.2018.16737?viewType=citedby-info)   
-   <img src="/img/infrared.jpg" width="400px" />    -->
+
+
+<h3 id="RECENT-RESEARCH">
+  <a href="#RECENT-RESEARCH" class="headerlink" title="RECENT RESEARCH "></a>
+  <strong>RECENT RESEARCH</strong>
+  <!--(<font color=orange>orange-colored works are my favorite</font>)-->
+</h3>
+<ol>
+  <li>
+    <p>
+      <strong>YASPS: A Symbolic Framework for Extensible, High-Performance IPC Simulation</strong>[J].<br>
+      Xuan Tang, <strong>Kemeng Huang</strong>, Gilbert Bernstein, Minchen Li, Tzumao Li.<br>
+      <strong>ACM Transaction on Graphics</strong>, 2026. (SIGGRAPH 2026)<br>
+      [paper][video][source code] (coming soon)
+    </p>
+    <img src="/img/YASPS.jpg" width="500px" />
+  </li>
+  <li>
+    <p>
+      <strong>Efficient B-Spline Finite Elements for Cloth Simulation</strong>[J].<br>
+      Yuqi Meng, Yihao Shi, <strong>Kemeng Huang</strong>, Zixuan Lu, Ning Guo, Taku Komura, Yin Yang, Minchen Li.<br>
+      <strong>ACM Transaction on Graphics</strong>, 2026. (SIGGRAPH 2026)<br>
+      [paper]<a href="https://arxiv.org/pdf/2506.18867">[arxiv]</a><a href="https://www.youtube.com/watch?v=Mic1pfp33fI">[video]</a><a href="https://simulation-intelligence.github.io/BS-Cloth/">[project page (code)]</a>
+    </p>
+    <img src="/img/BSPLINE.jpg" width="500px" />
+  </li>
+  <li>
+    <p>
+      <strong>AGIPC: Adaptive In-Solve Algebraic Coarsening for GPU IPC</strong>[C].<br>
+      Xuan Wang, Zhaofeng Luo, Minchen Li, Taku Komura, <strong>Kemeng Huang#</strong>.<br>
+      <strong>SIGGRAPH 2026 Conference Paper</strong>.<br>
+      [paper]<a href="https://arxiv.org/abs/2605.04773">[arxiv]</a><a href="https://youtu.be/W4h_rcuEXvw">[video]</a>[source code] (coming soon)
+    </p>
+    <img src="/img/AGIPC.jpg" width="500px" />
+  </li>
+  <li>
+    <p>
+      <strong>MAS-PNCG: An Efficient Multilevel Preconditioned Nonlinear Conjugate Gradient Method for Incremental Potential Contact</strong>.<br>
+      Yu Zhang*, Xing Shen*,  <strong>Kemeng Huang#</strong>, Wei Chen, Yin Yang, Taku Komura, Tiantian Liu, Xingang Pan.<br>
+      <a href="/img/maspncg.pdf"><strong>Preprint</strong></a> 2026 <a href="https://arxiv.org/abs/2604.19892">[arxiv]</a>
+    </p>
+    <img src="/img/teaser_zoomin.jpg" width="500px" />
+  </li>
+  <li>
+    <p>
+      <strong>SmokeSVD: Smoke Reconstruction from A Single View via Progressive Novel View Synthesis and Refinement with Diffusion Models</strong>[C].<br>
+      Chen Li*, Shanshan Dong*, Sheng Qiu, Jianmin Han, Yibo Zhao, Zan Gao, Taku Komura, <strong>Kemeng Huang</strong>.<br>
+      <strong>The IEEE/CVF Conference on Computer Vision and Pattern Recognition</strong>, 2026. (CVPR 2026, <font color="red">Oral Paper & Award Candidate, Top 0.5%</font>)<br>
+      <a href="/img/smokeSVD.pdf">[paper]</a> <a href="https://arxiv.org/abs/2507.12156">[arxiv]</a> <a href="https://youtu.be/UE4sH1niy4o">[video]</a> <a href="https://github.com/dongss414/SmokeSVD">[source code]</a>
+    </p>
+    <img src="/img/smokesvd.png" width="500px" />
+  </li>
+  <li>
+    <p>
+      <strong>PAT3D: Physics-Augmented Text-to-3D Scene Generation</strong>[C].<br>
+      Guying Lin, <strong>Kemeng Huang</strong>, Michael Liu, Ruihan Gao, Hanke Chen, Lyuhao Chen, Beijia Lu, Taku Komura, Yuan Liu, Jun-Yan Zhu, Minchen Li.<br>
+      <strong>International Conference on Learning Representations</strong>, 2026. (ICLR 2026)<br>
+      <a href="https://openreview.net/pdf?id=iIRxFkeCuY">[paper]</a> <a href="https://arxiv.org/abs/2511.21978">[arxiv]</a> <a href="https://simulation-intelligence.github.io/PAT3D/">[project page (code)]</a>
+    </p>
+    <img src="/img/pat3d.png" width="500px" />
+  </li>
+  <li>
+    <p>
+      <strong>StiffGIPC: Advancing GPU IPC for Stiff Affine-Deformable Simulation</strong>[J].<br>
+      <strong>Kemeng Huang</strong>, Xinyu Lu, Huancheng Lin, Taku Komura, Minchen Li.<br>
+      <strong>ACM Transaction on Graphics</strong>, 2025. (SIGGRAPH 2025)<br>
+      <a href="https://doi.org/10.1145/3735126">[paper]</a> <a href="https://arxiv.org/abs/2411.06224">[arxiv]</a> <a href="https://www.youtube.com/watch?v=3TBoTX2vag4&list=LL">[video]</a> <a href="https://github.com/KemengHuang/Stiff-GIPC">[source code]</a>
+    </p>
+    <img src="/img/ugipc-teaser.JPG" width="500px" />
+  </li>
+  <li>
+    <p>
+      <strong>GIPC: Fast and Stable Gauss-Newton Optimization of IPC Barrier Energy</strong>[J].<br>
+      <strong>Kemeng Huang</strong>, Floyd M. Chitalu, Huancheng Lin, Taku Komura.<br>
+      <strong>ACM Transaction on Graphics</strong>, 2024. (SIGGRAPH 2024)<br>
+      <a href="https://doi.org/10.1145/3643028">[paper]</a> <a href="https://arxiv.org/abs/2308.09400">[arxiv]</a> <a href="/img/ipc_paper-suppl.pdf">[suppDoc]</a> <a href="https://youtu.be/5rwp6AiHtrw">[video]</a> <a href="https://github.com/KemengHuang/GPU_IPC">[source code]</a> <a href="https://www.i-cable.com/%e6%96%b0%e8%81%9e%e8%b3%87%e8%a8%8a/282334/%E6%99%BA%E5%89%B5%E6%9C%AA%E4%BE%86-%E5%89%B5%E6%96%B0%E7%A7%91%E6%8A%80%E6%94%B9%E9%9D%A9%E8%A3%BD%E8%A1%A3%E6%A5%AD">[i-cable news]</a>
+    </p>
+    <img src="/img/gipcT.png" width="500px" />
+  </li>
+  <li>
+    <p>
+      <strong>A Novel Plastic Phase-Field Method for Ductile Fracture with GPU Optimization</strong>[J].<br>
+      Zipeng Zhao<strong>*</strong>, <strong>Kemeng Huang*</strong>, Chen Li, Changbo Wang, Hong Qin.<br>
+      <strong>Computer Graphics Forum</strong>, 2020 (PG 2020).<br>
+      <a href="/img/CGF-WORK.pdf">[Paper]</a> <a href="https://www.youtube.com/watch?v=TjBdFXWkrAQ">[video]</a> <a href="https://github.com/KemengHuang/Explicit-GPUMPM-Ductile-Fracture">[source code]</a>
+    </p>
+    <img src="/img/pgcgf.jpg" width="500px" />
+  </li>
+  <li>
+    <p>
+      <strong>Novel Hierarchical Strategies for SPH-centric Algorithms on GPGPU</strong>[J].<br>
+      <strong>Kemeng Huang</strong>, Zipeng Zhao, Chen Li, Changbo Wang, Hong Qin.<br>
+      <strong>Graphical Models</strong>, 2020.<br>
+      <a href="/img/GMOD-WORK.pdf">[Paper]</a> <a href="https://www.youtube.com/watch?v=XOugvO3Z_K4">[video]</a> <a href="https://github.com/KemengHuang/Fastest-SPH-framework">[source code]</a>
+    </p>
+    <img src="/img/gmb.jpg" width="500px" />
+  </li>
+  <li>
+    <p>
+      <strong>A General Novel Parallel Framework for SPH-centric Algorithms</strong>[J].<br>
+      <strong>Kemeng Huang</strong>, Jiming Ruan, Zipeng Zhao, Chen Li, Changbo Wang, Hong Qin.<br>
+      <strong>Proceedings of the ACM on Computer Graphics and Interactive Techniques</strong>, 2019 (I3D 2019).<br>
+      <a href="/img/i3dpaper.pdf">[Paper]</a> <a href="https://www.youtube.com/watch?v=1yT7BIiW3ws">[video]</a>  <a href="https://github.com/KemengHuang/Fastest-SPH-framework">[source code]</a>
+    </p>
+    <img src="/img/i3d.jpg" width="500px" />
+  </li>
+</ol>
 
 
 <h3 id="TEACHING"><a href="#TEACHING" class="headerlink" title="TEACHING"></a><strong>TEACHING</strong></h3><ul>
