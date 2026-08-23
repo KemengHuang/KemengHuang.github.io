@@ -43,6 +43,17 @@
             <img src="/img/myTag.jpg" alt="Kemeng Huang&#039;s Homepage" height="28">
           </a>
         </div>
+        <div class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="#NEWS">News</a>
+            <a class="navbar-item" href="#PROJECTS">Projects</a>
+            <a class="navbar-item" href="#RECENT-RESEARCH">Research</a>
+            <a class="navbar-item" href="#TEACHING">Teaching</a>
+            <a class="navbar-item" href="#AWARDS">Awards</a>
+            <a class="navbar-item" href="#EXPERIENCES">Experience</a>
+            <a class="navbar-item" href="#CONTACT-ME">Contact</a>
+          </div>
+        </div>
       </div>
     </nav>
     <section class="section">
@@ -62,35 +73,39 @@
                     Before starting my Ph.D journey, I worked with Prof. Hong Qin (Stony Brook University, New York) and Prof. Changbo Wang (ECNU)
                     on Physical Simulation and High-Performance Computing, specifically focusing on real-time fluid simulation.
                   </p>
-                  <p>My current research interests include: <strong>Physical simulation, High performance computing, Differentiable simulation, Sim2Real, Sim4ML, Geometry processing,</strong> Rendering.</p>
                   <p>
-                    <strong><span style="color:red">We are currently developing the libuipc library.
+                    My current research interests include: <strong>Physical simulation, High performance computing, Differentiable simulation, Sim2Real, Sim4ML, Geometry processing,</strong> Rendering.
+                  </p>
+                  <p>
+                    <strong><span class="text-important">We are currently developing the libuipc library.
                     If you are interested in this project and would like to contribute to the development of this important library, please send me an email.
                     We welcome your technical contributions and funding support. We also welcome the cooperations by using our library.</span></strong>
                   </p>
                   <!--**<font color=red>Prof. Taku is currently seeking talented research assistants (typically offering HK$21,000 per month) to join us in physical simulation and its applications in robotics and deep learning. We are looking for individuals with experience in physical simulation, numerical solver optimization, parallel programming, and deep learning. In our group, you will have the opportunity to participate in research projects, gather publications, and lead your own projects to enhance your research experience. Additionally, if you make good progress, you have the chance to transition to a PhD candidate at HKU or receive a recommendation letter from Prof. Taku for applications outside of HKU.</font>**-->
-                  <!--<p>
-                    <span style="color:blue">We are looking for Research Assistant to contribute to our development of LibUIPC at HKU.
+                  <!--
+                  <p>
+                    <span class="text-important">We are looking for Research Assistant to contribute to our development of LibUIPC at HKU.
                     You’ll gain expertise in the advanced simulation engine design and become proficient in the latest simulation algorithms and participate in meaningful research projects.</span>
-                  </p>-->
+                  </p>
+                  -->
                   <!--<font color=blue>I'll be on the job market in 2025/2026 for a research position, either in academia or industry. I'm eager to learn and develop new technologies and passionate about contributing to meaningful research/project.</font>-->
 
                   <h3 id="NEWS">
                     <a href="#NEWS" class="headerlink" title="NEWS"></a>
-                    <strong><span style="color:orange">NEWS</span></strong>
+                    <strong><span class="text-accent">NEWS</span></strong>
                   </h3>
                   <p>
                     <strong>
-                      2026 - <span style="color:blue">One another powerful Unified GPU Simulation Framework is on the way.
+                      2026 - <span class="text-accent">One another powerful Unified GPU Simulation Framework is on the way.
                       My high performance simulation journey here seems to be reaching its end, and this could be my last leading project.
                       Fingers crossed everything goes well, and I hope it can be helpful along your learning and working journey.</span>
                     </strong>
                     <br>
                     <strong>
-                      2026 - <span style="color:blue">One another useful differentiable GPU IPC framework is on the way.</span>
+                      2026 - <span class="text-accent">One another useful differentiable GPU IPC framework is on the way.</span>
                     </strong>
                     <br>
-                    2026 - <span style="color:blue"><strong>AGIPC</strong> is accepted to SIGGRAPH 2026, and the source code will be released later.</span>
+                    2026 - <span class="text-accent"><strong>AGIPC</strong> is accepted to SIGGRAPH 2026, and the source code will be released later.</span>
                     <br>
                     2025 - We have opensourced <strong>Stiff-GIPC</strong>, a high‑performance unified GPU IPC framework.
                     Hope it can be helpful for your projects.
@@ -115,7 +130,7 @@
                   </h3>
                   <ol>
                     <li>
-                      <strong>LIBUIPC</strong> (Both <strong><span style="color:red">C++</span></strong> and <strong><span style="color:red">Python</span></strong> API are provided)
+                      <strong>LIBUIPC</strong> (Both <strong><span class="text-accent">C++</span></strong> and <strong><span class="text-accent">Python</span></strong> API are provided)
                       <!--<br>
                       <strong>Kemeng Huang*#</strong>, Xinyu Lu*, Zhaofeng Luo, Bowen Ren, Juntian Zheng, Huancheng Lin, Floyd M. Chitalu, Minchen Li, Taku Komura.-->
                       <br>
@@ -136,130 +151,196 @@
                   </h3>
                   <ol>
                     <li>
-                      <p>
-                        <strong>YASPS: A Symbolic Framework for Extensible, High-Performance IPC Simulation</strong>[J].<br>
-                        Xuan Tang, <strong>Kemeng Huang</strong>, Gilbert Bernstein, Minchen Li, Tzumao Li.<br>
-                        <strong>ACM Transaction on Graphics</strong>, 2026. (SIGGRAPH 2026)<br>
-                        <a href="https://dl.acm.org/doi/10.1145/3811327">[paper]</a>
-                        [video]
-                        <a href="https://github.com/txstc55/yasps">[source code]</a>
-                      </p>
-                      <img src="/img/YASPS.jpg" width="500" alt="YASPS teaser" loading="lazy">
+                      <div class="pub">
+                        <img src="/img/YASPS.jpg" alt="YASPS teaser" loading="lazy">
+                        <div class="pub-text">
+                          <p>
+                            <strong>YASPS: A Symbolic Framework for Extensible, High-Performance IPC Simulation</strong>[J].<br>
+                            Xuan Tang, <strong>Kemeng Huang</strong>, Gilbert Bernstein, Minchen Li, Tzumao Li.<br>
+                            <strong>ACM Transaction on Graphics</strong>, 2026. (SIGGRAPH 2026)
+                          </p>
+                          <p class="pub-links">
+                            <a href="https://dl.acm.org/doi/10.1145/3811327">paper</a>
+                            <a href="https://github.com/txstc55/yasps">source code</a>
+                          </p>
+                        </div>
+                      </div>
                     </li>
                     <li>
-                      <p>
-                        <strong>Efficient B-Spline Finite Elements for Cloth Simulation</strong>[J].<br>
-                        Yuqi Meng, Yihao Shi, <strong>Kemeng Huang</strong>, Zixuan Lu, Ning Guo, Taku Komura, Yin Yang, Minchen Li.<br>
-                        <strong>ACM Transaction on Graphics</strong>, 2026. (SIGGRAPH 2026)<br>
-                        <a href="https://dl.acm.org/doi/10.1145/3811278">[paper]</a>
-                        <a href="https://arxiv.org/pdf/2506.18867">[arxiv]</a>
-                        <a href="https://www.youtube.com/watch?v=Mic1pfp33fI">[video]</a>
-                        <a href="https://simulation-intelligence.github.io/BS-Cloth/">[project page (code)]</a>
-                      </p>
-                      <img src="/img/BSPLINE.jpg" width="500" alt="B-Spline cloth simulation teaser" loading="lazy">
+                      <div class="pub">
+                        <img src="/img/BSPLINE.jpg" alt="B-Spline cloth simulation teaser" loading="lazy">
+                        <div class="pub-text">
+                          <p>
+                            <strong>Efficient B-Spline Finite Elements for Cloth Simulation</strong>[J].<br>
+                            Yuqi Meng, Yihao Shi, <strong>Kemeng Huang</strong>, Zixuan Lu, Ning Guo, Taku Komura, Yin Yang, Minchen Li.<br>
+                            <strong>ACM Transaction on Graphics</strong>, 2026. (SIGGRAPH 2026)
+                          </p>
+                          <p class="pub-links">
+                            <a href="https://dl.acm.org/doi/10.1145/3811278">paper</a>
+                            <a href="https://arxiv.org/pdf/2506.18867">arxiv</a>
+                            <a href="https://www.youtube.com/watch?v=Mic1pfp33fI">video</a>
+                            <a href="https://simulation-intelligence.github.io/BS-Cloth/">project page (code)</a>
+                          </p>
+                        </div>
+                      </div>
                     </li>
                     <li>
-                      <p>
-                        <strong>AGIPC: Adaptive In-Solve Algebraic Coarsening for GPU IPC</strong>[C].<br>
-                        Xuan Wang, Zhaofeng Luo, Minchen Li, Taku Komura, <strong>Kemeng Huang</strong>.<br>
-                        <strong>SIGGRAPH 2026 Conference Paper</strong>.<br>
-                        <a href="https://dl.acm.org/doi/10.1145/3799902.3811199">[paper]</a>
-                        <a href="https://arxiv.org/abs/2605.04773">[arxiv]</a>
-                        <a href="https://youtu.be/W4h_rcuEXvw">[video]</a>
-                        [source code] (coming soon)
-                      </p>
-                      <img src="/img/AGIPC.jpg" width="500" alt="AGIPC teaser" loading="lazy">
+                      <div class="pub">
+                        <img src="/img/AGIPC.jpg" alt="AGIPC teaser" loading="lazy">
+                        <div class="pub-text">
+                          <p>
+                            <strong>AGIPC: Adaptive In-Solve Algebraic Coarsening for GPU IPC</strong>[C].<br>
+                            Xuan Wang, Zhaofeng Luo, Minchen Li, Taku Komura, <strong>Kemeng Huang</strong>.<br>
+                            <strong>SIGGRAPH 2026 Conference Paper</strong>.
+                          </p>
+                          <p class="pub-links">
+                            <a href="https://dl.acm.org/doi/10.1145/3799902.3811199">paper</a>
+                            <a href="https://arxiv.org/abs/2605.04773">arxiv</a>
+                            <a href="https://youtu.be/W4h_rcuEXvw">video</a>
+                            <span class="pub-note">source code coming soon</span>
+                          </p>
+                        </div>
+                      </div>
                     </li>
                     <li>
-                      <p>
-                        <strong>MAS-PNCG: An Efficient Multilevel Preconditioned Nonlinear Conjugate Gradient Method for Incremental Potential Contact</strong>.<br>
-                        Yu Zhang*, Xing Shen*,  <strong>Kemeng Huang</strong>, Wei Chen, Yin Yang, Taku Komura, Tiantian Liu, Xingang Pan.<br>
-                        <a href="/img/maspncg.pdf"><strong>Preprint</strong></a> 2026
-                        <a href="https://arxiv.org/abs/2604.19892">[arxiv]</a>
-                      </p>
-                      <img src="/img/teaser_zoomin.jpg" width="500" alt="MAS-PNCG teaser" loading="lazy">
+                      <div class="pub">
+                        <img src="/img/teaser_zoomin.jpg" alt="MAS-PNCG teaser" loading="lazy">
+                        <div class="pub-text">
+                          <p>
+                            <strong>MAS-PNCG: An Efficient Multilevel Preconditioned Nonlinear Conjugate Gradient Method for Incremental Potential Contact</strong>.<br>
+                            Yu Zhang*, Xing Shen*,  <strong>Kemeng Huang</strong>, Wei Chen, Yin Yang, Taku Komura, Tiantian Liu, Xingang Pan.<br>
+                            <strong>Preprint</strong>, 2026.
+                          </p>
+                          <p class="pub-links">
+                            <a href="/img/maspncg.pdf">paper</a>
+                            <a href="https://arxiv.org/abs/2604.19892">arxiv</a>
+                          </p>
+                        </div>
+                      </div>
                     </li>
                     <li>
-                      <p>
-                        <strong>SmokeSVD: Smoke Reconstruction from A Single View via Progressive Novel View Synthesis and Refinement with Diffusion Models</strong>[C].<br>
-                        Chen Li*, Shanshan Dong*, Sheng Qiu, Jianmin Han, Yibo Zhao, Zan Gao, Taku Komura, <strong>Kemeng Huang</strong>.<br>
-                        <strong>The IEEE/CVF Conference on Computer Vision and Pattern Recognition</strong>, 2026. (CVPR 2026, <span style="color:red">Best Paper Candidate, Top 0.5%</span>)<br>
-                        <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Li_SmokeSVD_Smoke_Reconstruction_from_A_Single_View_via_Progressive_Novel_CVPR_2026_paper.pdf">[paper]</a>
-                        <a href="https://arxiv.org/abs/2507.12156">[arxiv]</a>
-                        <a href="https://youtu.be/UE4sH1niy4o">[video]</a>
-                        <a href="https://github.com/ZjnuQS/SmokeSVD">[source code]</a>
-                      </p>
-                      <img src="/img/smokesvd.jpg" width="500" alt="SmokeSVD teaser" loading="lazy">
+                      <div class="pub">
+                        <img src="/img/smokesvd.jpg" alt="SmokeSVD teaser" loading="lazy">
+                        <div class="pub-text">
+                          <p>
+                            <strong>SmokeSVD: Smoke Reconstruction from A Single View via Progressive Novel View Synthesis and Refinement with Diffusion Models</strong>[C].<br>
+                            Chen Li*, Shanshan Dong*, Sheng Qiu, Jianmin Han, Yibo Zhao, Zan Gao, Taku Komura, <strong>Kemeng Huang</strong>.<br>
+                            <strong>The IEEE/CVF Conference on Computer Vision and Pattern Recognition</strong>, 2026. (CVPR 2026, <span class="text-important">Best Paper Candidate, Top 0.5%</span>)
+                          </p>
+                          <p class="pub-links">
+                            <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Li_SmokeSVD_Smoke_Reconstruction_from_A_Single_View_via_Progressive_Novel_CVPR_2026_paper.pdf">paper</a>
+                            <a href="https://arxiv.org/abs/2507.12156">arxiv</a>
+                            <a href="https://youtu.be/UE4sH1niy4o">video</a>
+                            <a href="https://github.com/ZjnuQS/SmokeSVD">source code</a>
+                          </p>
+                        </div>
+                      </div>
                     </li>
                     <li>
-                      <p>
-                        <strong>PAT3D: Physics-Augmented Text-to-3D Scene Generation</strong>[C].<br>
-                        Guying Lin, <strong>Kemeng Huang</strong>, Michael Liu, Ruihan Gao, Hanke Chen, Lyuhao Chen, Beijia Lu, Taku Komura, Yuan Liu, Jun-Yan Zhu, Minchen Li.<br>
-                        <strong>International Conference on Learning Representations</strong>, 2026. (ICLR 2026)<br>
-                        <a href="https://openreview.net/pdf?id=iIRxFkeCuY">[paper]</a>
-                        <a href="https://arxiv.org/abs/2511.21978">[arxiv]</a>
-                        <a href="https://simulation-intelligence.github.io/PAT3D/">[project page (code)]</a>
-                      </p>
-                      <img src="/img/pat3d.jpg" width="500" alt="PAT3D teaser" loading="lazy">
+                      <div class="pub">
+                        <img src="/img/pat3d.jpg" alt="PAT3D teaser" loading="lazy">
+                        <div class="pub-text">
+                          <p>
+                            <strong>PAT3D: Physics-Augmented Text-to-3D Scene Generation</strong>[C].<br>
+                            Guying Lin, <strong>Kemeng Huang</strong>, Michael Liu, Ruihan Gao, Hanke Chen, Lyuhao Chen, Beijia Lu, Taku Komura, Yuan Liu, Jun-Yan Zhu, Minchen Li.<br>
+                            <strong>International Conference on Learning Representations</strong>, 2026. (ICLR 2026)
+                          </p>
+                          <p class="pub-links">
+                            <a href="https://openreview.net/pdf?id=iIRxFkeCuY">paper</a>
+                            <a href="https://arxiv.org/abs/2511.21978">arxiv</a>
+                            <a href="https://simulation-intelligence.github.io/PAT3D/">project page (code)</a>
+                          </p>
+                        </div>
+                      </div>
                     </li>
                     <li>
-                      <p>
-                        <strong>StiffGIPC: Advancing GPU IPC for Stiff Affine-Deformable Simulation</strong>[J].<br>
-                        <strong>Kemeng Huang</strong>, Xinyu Lu, Huancheng Lin, Taku Komura, Minchen Li.<br>
-                        <strong>ACM Transaction on Graphics</strong>, 2025. (SIGGRAPH 2025)<br>
-                        <a href="https://doi.org/10.1145/3735126">[paper]</a>
-                        <a href="https://arxiv.org/abs/2411.06224">[arxiv]</a>
-                        <a href="https://www.youtube.com/watch?v=3TBoTX2vag4&list=LL">[video]</a>
-                        <a href="https://github.com/KemengHuang/Stiff-GIPC">[source code]</a>
-                      </p>
-                      <img src="/img/ugipc-teaser.JPG" width="500" alt="StiffGIPC teaser" loading="lazy">
+                      <div class="pub">
+                        <img src="/img/ugipc-teaser.JPG" alt="StiffGIPC teaser" loading="lazy">
+                        <div class="pub-text">
+                          <p>
+                            <strong>StiffGIPC: Advancing GPU IPC for Stiff Affine-Deformable Simulation</strong>[J].<br>
+                            <strong>Kemeng Huang</strong>, Xinyu Lu, Huancheng Lin, Taku Komura, Minchen Li.<br>
+                            <strong>ACM Transaction on Graphics</strong>, 2025. (SIGGRAPH 2025)
+                          </p>
+                          <p class="pub-links">
+                            <a href="https://doi.org/10.1145/3735126">paper</a>
+                            <a href="https://arxiv.org/abs/2411.06224">arxiv</a>
+                            <a href="https://www.youtube.com/watch?v=3TBoTX2vag4&list=LL">video</a>
+                            <a href="https://github.com/KemengHuang/Stiff-GIPC">source code</a>
+                          </p>
+                        </div>
+                      </div>
                     </li>
                     <li>
-                      <p>
-                        <strong>GIPC: Fast and Stable Gauss-Newton Optimization of IPC Barrier Energy</strong>[J].<br>
-                        <strong>Kemeng Huang</strong>, Floyd M. Chitalu, Huancheng Lin, Taku Komura.<br>
-                        <strong>ACM Transaction on Graphics</strong>, 2024. (SIGGRAPH 2024)<br>
-                        <a href="https://doi.org/10.1145/3643028">[paper]</a>
-                        <a href="https://arxiv.org/abs/2308.09400">[arxiv]</a>
-                        <a href="/img/ipc_paper-suppl.pdf">[suppDoc]</a>
-                        <a href="https://youtu.be/5rwp6AiHtrw">[video]</a>
-                        <a href="https://github.com/KemengHuang/GPU_IPC">[source code]</a>
-                        <a href="https://www.i-cable.com/%e6%96%b0%e8%81%9e%e8%b3%87%e8%a8%8a/282334/%E6%99%BA%E5%89%B5%E6%9C%AA%E4%BE%86-%E5%89%B5%E6%96%B0%E7%A7%91%E6%8A%80%E6%94%B9%E9%9D%A9%E8%A3%BD%E8%A1%A3%E6%A5%AD">[i-cable news]</a>
-                      </p>
-                      <img src="/img/gipcT.jpg" width="500" alt="GIPC teaser" loading="lazy">
+                      <div class="pub">
+                        <img src="/img/gipcT.jpg" alt="GIPC teaser" loading="lazy">
+                        <div class="pub-text">
+                          <p>
+                            <strong>GIPC: Fast and Stable Gauss-Newton Optimization of IPC Barrier Energy</strong>[J].<br>
+                            <strong>Kemeng Huang</strong>, Floyd M. Chitalu, Huancheng Lin, Taku Komura.<br>
+                            <strong>ACM Transaction on Graphics</strong>, 2024. (SIGGRAPH 2024)
+                          </p>
+                          <p class="pub-links">
+                            <a href="https://doi.org/10.1145/3643028">paper</a>
+                            <a href="https://arxiv.org/abs/2308.09400">arxiv</a>
+                            <a href="/img/ipc_paper-suppl.pdf">suppDoc</a>
+                            <a href="https://youtu.be/5rwp6AiHtrw">video</a>
+                            <a href="https://github.com/KemengHuang/GPU_IPC">source code</a>
+                            <a href="https://www.i-cable.com/%e6%96%b0%e8%81%9e%e8%b3%87%e8%a8%8a/282334/%E6%99%BA%E5%89%B5%E6%9C%AA%E4%BE%86-%E5%89%B5%E6%96%B0%E7%A7%91%E6%8A%80%E6%94%B9%E9%9D%A9%E8%A3%BD%E8%A1%A3%E6%A5%AD">i-cable news</a>
+                          </p>
+                        </div>
+                      </div>
                     </li>
                     <li>
-                      <p>
-                        <strong>A Novel Plastic Phase-Field Method for Ductile Fracture with GPU Optimization</strong>[J].<br>
-                        Zipeng Zhao<strong>*</strong>, <strong>Kemeng Huang*</strong>, Chen Li, Changbo Wang, Hong Qin.<br>
-                        <strong>Computer Graphics Forum</strong>, 2020 (PG 2020).<br>
-                        <a href="/img/CGF-WORK.pdf">[Paper]</a>
-                        <a href="https://www.youtube.com/watch?v=TjBdFXWkrAQ">[video]</a>
-                        <a href="https://github.com/KemengHuang/Explicit-GPUMPM-Ductile-Fracture">[source code]</a>
-                      </p>
-                      <img src="/img/pgcgf.jpg" width="500" alt="Phase-field ductile fracture teaser" loading="lazy">
+                      <div class="pub">
+                        <img src="/img/pgcgf.jpg" alt="Phase-field ductile fracture teaser" loading="lazy">
+                        <div class="pub-text">
+                          <p>
+                            <strong>A Novel Plastic Phase-Field Method for Ductile Fracture with GPU Optimization</strong>[J].<br>
+                            Zipeng Zhao<strong>*</strong>, <strong>Kemeng Huang*</strong>, Chen Li, Changbo Wang, Hong Qin.<br>
+                            <strong>Computer Graphics Forum</strong>, 2020 (PG 2020).
+                          </p>
+                          <p class="pub-links">
+                            <a href="/img/CGF-WORK.pdf">paper</a>
+                            <a href="https://www.youtube.com/watch?v=TjBdFXWkrAQ">video</a>
+                            <a href="https://github.com/KemengHuang/Explicit-GPUMPM-Ductile-Fracture">source code</a>
+                          </p>
+                        </div>
+                      </div>
                     </li>
                     <li>
-                      <p>
-                        <strong>Novel Hierarchical Strategies for SPH-centric Algorithms on GPGPU</strong>[J].<br>
-                        <strong>Kemeng Huang</strong>, Zipeng Zhao, Chen Li, Changbo Wang, Hong Qin.<br>
-                        <strong>Graphical Models</strong>, 2020.<br>
-                        <a href="/img/GMOD-WORK.pdf">[Paper]</a>
-                        <a href="https://www.youtube.com/watch?v=XOugvO3Z_K4">[video]</a>
-                        <a href="https://github.com/KemengHuang/Fastest-SPH-framework">[source code]</a>
-                      </p>
-                      <img src="/img/gmb.jpg" width="500" alt="Hierarchical SPH teaser" loading="lazy">
+                      <div class="pub">
+                        <img src="/img/gmb.jpg" alt="Hierarchical SPH teaser" loading="lazy">
+                        <div class="pub-text">
+                          <p>
+                            <strong>Novel Hierarchical Strategies for SPH-centric Algorithms on GPGPU</strong>[J].<br>
+                            <strong>Kemeng Huang</strong>, Zipeng Zhao, Chen Li, Changbo Wang, Hong Qin.<br>
+                            <strong>Graphical Models</strong>, 2020.
+                          </p>
+                          <p class="pub-links">
+                            <a href="/img/GMOD-WORK.pdf">paper</a>
+                            <a href="https://www.youtube.com/watch?v=XOugvO3Z_K4">video</a>
+                            <a href="https://github.com/KemengHuang/Fastest-SPH-framework">source code</a>
+                          </p>
+                        </div>
+                      </div>
                     </li>
                     <li>
-                      <p>
-                        <strong>A General Novel Parallel Framework for SPH-centric Algorithms</strong>[J].<br>
-                        <strong>Kemeng Huang</strong>, Jiming Ruan, Zipeng Zhao, Chen Li, Changbo Wang, Hong Qin.<br>
-                        <strong>Proceedings of the ACM on Computer Graphics and Interactive Techniques</strong>, 2019 (I3D 2019).<br>
-                        <a href="/img/i3dpaper.pdf">[Paper]</a>
-                        <a href="https://www.youtube.com/watch?v=1yT7BIiW3ws">[video]</a>
-                        <a href="https://github.com/KemengHuang/Fastest-SPH-framework">[source code]</a>
-                      </p>
-                      <img src="/img/i3d.jpg" width="500" alt="Parallel SPH framework teaser" loading="lazy">
+                      <div class="pub">
+                        <img src="/img/i3d.jpg" alt="Parallel SPH framework teaser" loading="lazy">
+                        <div class="pub-text">
+                          <p>
+                            <strong>A General Novel Parallel Framework for SPH-centric Algorithms</strong>[J].<br>
+                            <strong>Kemeng Huang</strong>, Jiming Ruan, Zipeng Zhao, Chen Li, Changbo Wang, Hong Qin.<br>
+                            <strong>Proceedings of the ACM on Computer Graphics and Interactive Techniques</strong>, 2019 (I3D 2019).
+                          </p>
+                          <p class="pub-links">
+                            <a href="/img/i3dpaper.pdf">paper</a>
+                            <a href="https://www.youtube.com/watch?v=1yT7BIiW3ws">video</a>
+                            <a href="https://github.com/KemengHuang/Fastest-SPH-framework">source code</a>
+                          </p>
+                        </div>
+                      </div>
                     </li>
                   </ol>
 

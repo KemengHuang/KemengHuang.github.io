@@ -1,5 +1,25 @@
 /* Custom styles (hand-maintained, loaded after default.css) */
 
+/* Accent colors: purple for highlights, red for important notices */
+.text-accent {
+  color: #6c63ff;
+}
+.text-important {
+  color: red;
+}
+
+/* Smooth scrolling for in-page navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Banner image: crop height so content starts higher */
+.card-image img.thumbnail {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
 /* Paper teaser images: rounded thumbnail frame, like Bootstrap's .thumbnail */
 .article .content img {
   display: block;
@@ -7,4 +27,71 @@
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
+}
+
+/* Publication entries: teaser on the left, text on the right */
+.pub {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+.pub > a.gallery-item,
+.pub > img {
+  flex: 0 0 240px;
+}
+.pub img {
+  width: 100%;
+  height: auto;
+}
+.pub-text {
+  flex: 1;
+  min-width: 0;
+}
+.pub-text p {
+  margin-bottom: 0.5rem;
+}
+
+/* Paper links rendered as pills */
+.pub-links a {
+  display: inline-block;
+  padding: 2px 12px;
+  margin: 0 6px 6px 0;
+  font-size: 0.85em;
+  color: #4a4a4a;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  text-decoration: none;
+}
+.pub-links a:hover {
+  color: #6c63ff;
+  border-color: #6c63ff;
+}
+.pub-links .pub-note {
+  font-size: 0.85em;
+  color: #7a7a7a;
+}
+
+/* Mobile: stack teaser above text; keep navbar menu scrollable */
+@media screen and (max-width: 768px) {
+  .pub {
+    flex-direction: column;
+  }
+  .pub > a.gallery-item,
+  .pub > img {
+    flex-basis: auto;
+    width: 100%;
+    max-width: 420px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .navbar-main .navbar-menu {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    box-shadow: none;
+  }
+  .navbar-main .navbar-end {
+    margin: 0;
+  }
 }
