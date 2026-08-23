@@ -1,0 +1,10 @@
+/* Custom styles (hand-maintained, loaded after default.css) */
+
+/* Paper teaser images: rounded thumbnail frame, like Bootstrap's .thumbnail */
+.article .content img {
+  display: block;
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
