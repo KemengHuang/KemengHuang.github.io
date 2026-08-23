@@ -20,6 +20,18 @@
   font-family: "Lora", Georgia, serif;
 }
 
+/* Justify all body text, like Word */
+.article .content {
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* Keep linked author names on a single line */
+.pub-text a,
+.about-bio a {
+  white-space: nowrap;
+}
+
 /* Smooth scrolling for in-page navigation */
 html {
   scroll-behavior: smooth;
