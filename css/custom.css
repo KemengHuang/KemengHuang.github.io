@@ -29,6 +29,55 @@ html {
   border-radius: 4px;
 }
 
+/* Soft framed box (bio in sidebar, news in main column) */
+.soft-box {
+  padding: 0.75rem 1rem;
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+.about-bio {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: justify;
+  hyphens: auto;
+}
+.about-bio p + p {
+  margin-top: 0.75rem;
+}
+
+/* Entry lists: date label + aligned, justified text (news, teaching, awards, experiences) */
+.content .entry-list p {
+  display: flex;
+  gap: 0.75rem;
+  margin: 0;
+}
+.content .entry-list p + p {
+  margin-top: 0.4rem;
+}
+.entry-date {
+  flex: 0 0 auto;
+  min-width: 3.2rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.entry-wide .entry-date {
+  min-width: 8.5rem;
+}
+.entry-text {
+  flex: 1;
+  min-width: 0;
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* Publication list without numbering */
+.content ol.pub-list {
+  list-style-type: none;
+  margin-left: 0;
+}
+
 /* Publication entries: teaser on the left, text on the right */
 .pub {
   display: flex;

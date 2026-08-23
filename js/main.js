@@ -15,15 +15,6 @@
         link.appendChild(img);
     });
 
-    // Clone right-column widgets into the shadow column (shown on tablet widths)
-    var rightColumn = document.querySelector('.columns .column-right');
-    var shadowColumn = document.querySelector('.columns .column-right-shadow');
-    if (rightColumn && shadowColumn && !shadowColumn.children.length) {
-        Array.prototype.slice.call(rightColumn.children).forEach(function(child) {
-            shadowColumn.appendChild(child.cloneNode(true));
-        });
-    }
-
     // Back-to-top button
     var button = document.getElementById('back-to-top');
     if (button) {
