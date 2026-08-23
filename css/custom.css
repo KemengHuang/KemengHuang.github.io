@@ -8,6 +8,13 @@
   color: red;
 }
 
+/* NEWS heading: decorative serif font, larger size */
+#NEWS {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.03em;
+}
+
 /* Smooth scrolling for in-page navigation */
 html {
   scroll-behavior: smooth;
