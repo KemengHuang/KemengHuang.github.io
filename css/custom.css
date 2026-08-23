@@ -15,8 +15,9 @@
   letter-spacing: 0.03em;
 }
 
-/* NEWS entries: newspaper body serif */
-.news-list {
+/* Newspaper body serif (news entries, libuipc notice) */
+.news-list,
+.serif-body {
   font-family: "Lora", Georgia, serif;
 }
 
