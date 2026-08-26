@@ -246,6 +246,14 @@ html {
 body {
   padding-top: 60px;
 }
+/* Tagline next to the footer logo */
+.footer-tagline {
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  color: #888;
+  cursor: default;
+  margin-left: 0.5rem;
+}
 /* Stick the sidebar below the fixed navbar instead of sliding behind it */
 @media screen and (min-width: 769px) {
   .column-left.is-sticky {
