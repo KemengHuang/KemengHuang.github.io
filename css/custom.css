@@ -115,6 +115,10 @@ html {
 .content .divider-line + h3 {
   margin-top: 0;
 }
+/* Offset in-page anchor targets so the sticky navbar doesn't cover them */
+.content h3[id] {
+  scroll-margin-top: 5rem;
+}
 
 /* Avatar photo: same frame as teasers, plus a subtle shadow for depth */
 .image .avatar {
@@ -227,6 +231,25 @@ html {
     flex-basis: auto;
     width: 100%;
     max-width: 420px;
+  }
+}
+/* Keep the top navigation bar pinned to the viewport while scrolling;
+   z-index must beat the sticky sidebar's 99 from default.css */
+.navbar-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+/* The fixed navbar leaves the flow; reserve its height at the top of the page */
+body {
+  padding-top: 60px;
+}
+/* Stick the sidebar below the fixed navbar instead of sliding behind it */
+@media screen and (min-width: 769px) {
+  .column-left.is-sticky {
+    top: 80px;
   }
 }
 @media screen and (max-width: 1023px) {
