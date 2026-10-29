@@ -15,6 +15,20 @@
         link.appendChild(img);
     });
 
+    // Publication filter: toggle between All and Selected
+    var pubFilter = document.querySelector('.pub-filter');
+    var pubList = document.querySelector('ol.pub-list');
+    if (pubFilter && pubList) {
+        pubFilter.querySelectorAll('.pub-filter-btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                pubFilter.querySelectorAll('.pub-filter-btn').forEach(function(b) {
+                    b.classList.toggle('is-active', b === btn);
+                });
+                pubList.classList.toggle('show-selected', btn.getAttribute('data-filter') === 'selected');
+            });
+        });
+    }
+
     // Back-to-top button
     var button = document.getElementById('back-to-top');
     if (button) {

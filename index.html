@@ -47,7 +47,7 @@
           <div class="navbar-end">
             <a class="navbar-item" href="#NEWS">News</a>
             <a class="navbar-item" href="#PROJECTS">Projects</a>
-            <a class="navbar-item" href="#RECENT-RESEARCH">Research</a>
+            <a class="navbar-item" href="#RESEARCH">Research</a>
             <a class="navbar-item" href="#TEACHING">Teaching</a>
           </div>
         </div>
@@ -144,13 +144,17 @@
                     </li>
                   </ol>
 
-                  <h3 id="RECENT-RESEARCH">
-                    <a href="#RECENT-RESEARCH" class="headerlink" title="RECENT RESEARCH "></a>
-                    <strong>RECENT RESEARCH</strong>
-                    <!--(<font color=orange>orange-colored works are my favorite</font>)-->
+                  <h3 id="RESEARCH">
+                    <a href="#RESEARCH" class="headerlink" title="RESEARCH"></a>
+                    <strong>RESEARCH</strong>
                   </h3>
-                  <ol class="pub-list">
-                    <li>
+                  <div class="pub-filter">
+                    <button type="button" class="pub-filter-btn" data-filter="all">All</button>
+                    <span class="pub-filter-sep">|</span>
+                    <button type="button" class="pub-filter-btn is-active" data-filter="selected">Selected</button>
+                  </div>
+                  <ol class="pub-list show-selected">
+                    <li class="selected">
                       <div class="pub">
                         <img src="/img/diffgipc.jpg" alt="DiffGIPC teaser" loading="lazy">
                         <div class="pub-text">
@@ -161,6 +165,21 @@
                           </p>
                           <p class="pub-links">
                             <a href="https://arxiv.org/abs/2610.19091">arxiv</a>
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="pub">
+                        <img src="/img/phyvisgen.jpg" alt="PhyVisGen teaser" loading="lazy">
+                        <div class="pub-text">
+                          <p>
+                            <strong>PhyVisGen: Physically and Visually High-Fidelity Robotic Manipulation Data Generation</strong>.<br>
+                            <a href="https://scholar.google.com/citations?user=M4cXM9kAAAAJ">Yu&nbsp;Zheng</a>, Qiyu&nbsp;Feng, Yixin&nbsp;Wu, Baoquan&nbsp;Yang, Yixuan&nbsp;Zhou, Bingyang&nbsp;Hu, <strong>Kemeng&nbsp;Huang</strong>, Guansheng&nbsp;Yang, <a href="https://irmv.sjtu.edu.cn/wanghesheng">Hesheng&nbsp;Wang</a>.<br>
+                            <strong>Preprint</strong>, 2026.
+                          </p>
+                          <p class="pub-links">
+                            <a href="https://arxiv.org/abs/2609.25653">arxiv</a>
                           </p>
                         </div>
                       </div>
@@ -199,7 +218,7 @@
                         </div>
                       </div>
                     </li>
-                    <li>
+                    <li class="selected">
                       <div class="pub">
                         <img src="/img/AGIPC.jpg" alt="AGIPC teaser" loading="lazy">
                         <div class="pub-text">
@@ -232,7 +251,7 @@
                         </div>
                       </div>
                     </li>
-                    <li>
+                    <li class="selected">
                       <div class="pub">
                         <img src="/img/smokesvd.jpg" alt="SmokeSVD teaser" loading="lazy">
                         <div class="pub-text">
@@ -267,7 +286,7 @@
                         </div>
                       </div>
                     </li>
-                    <li>
+                    <li class="selected">
                       <div class="pub">
                         <img src="/img/ugipc-teaser.JPG" alt="StiffGIPC teaser" loading="lazy">
                         <div class="pub-text">
@@ -285,7 +304,7 @@
                         </div>
                       </div>
                     </li>
-                    <li>
+                    <li class="selected">
                       <div class="pub">
                         <img src="/img/gipcT.jpg" alt="GIPC teaser" loading="lazy">
                         <div class="pub-text">
@@ -339,7 +358,7 @@
                         </div>
                       </div>
                     </li>
-                    <li>
+                    <li class="selected">
                       <div class="pub">
                         <img src="/img/i3d.jpg" alt="Parallel SPH framework teaser" loading="lazy">
                         <div class="pub-text">
@@ -381,6 +400,39 @@
                     <p>
                       <span class="entry-date">2025 -</span>
                       <span class="entry-text"><strong>COMP3329</strong> Computer game design and programming [Section 2A], <strong>Instructor</strong>: Dr. T.W. Chim</span>
+                    </p>
+                  </div>
+
+                  <div class="divider-line"></div>
+
+                  <h3 id="INVITED-TALKS">
+                    <a href="#INVITED-TALKS" class="headerlink" title="INVITED TALKS"></a>
+                    <strong>INVITED TALKS</strong>
+                  </h3>
+                  <div class="entry-list">
+                    <p>
+                      <span class="entry-date">2026 -</span>
+                      <span class="entry-text"><strong>面向高鲁棒性、高精度与高性能的可微物理仿真统一方法</strong>, GAMES 2026研讨会 (host: Prof. Zeyu Wang)</span>
+                    </p>
+                    <p>
+                      <span class="entry-date">2026 -</span>
+                      <span class="entry-text"><strong>面向高精度仿真的高性能计算方法研究</strong>, 南京大学 (host: Prof. Beibei Wang)</span>
+                    </p>
+                    <p>
+                      <span class="entry-date">2026 -</span>
+                      <span class="entry-text"><strong>面向高精度仿真的高性能计算方法研究</strong>, 山东大学 (host: Prof. Lin Lv)</span>
+                    </p>
+                    <p>
+                      <span class="entry-date">2026 -</span>
+                      <span class="entry-text"><strong>Robust, Accurate and High-performance Simulation Framework</strong>, CCF CAD/CG 2026 (host: Prof. Bo Ren)</span>
+                    </p>
+                    <p>
+                      <span class="entry-date">2026 -</span>
+                      <span class="entry-text"><strong>物理仿真探索的思考、实践与心得</strong>, CSIG智能图形前沿研讨会 2026 (host: Prof. Bo Ren)</span>
+                    </p>
+                    <p>
+                      <span class="entry-date">2024 -</span>
+                      <span class="entry-text"><strong>High Performance Physical Simulation</strong>, CMU Graphics Seminar (host: Prof. Minchen Li)</span>
                     </p>
                   </div>
 

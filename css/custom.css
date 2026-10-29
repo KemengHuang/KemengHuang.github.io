@@ -178,6 +178,36 @@ html {
   margin-left: 0;
 }
 
+/* Publication filter toggle (All / Selected) */
+.pub-filter {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.pub-filter-btn {
+  padding: 0;
+  font: inherit;
+  color: #7a7a7a;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.pub-filter-btn:hover,
+.pub-filter-btn.is-active {
+  color: #6c63ff;
+}
+.pub-filter-btn.is-active {
+  font-weight: 600;
+}
+.pub-filter-sep {
+  color: #ccc;
+}
+/* Selected view: keep only publications marked with .selected */
+ol.pub-list.show-selected > li:not(.selected) {
+  display: none;
+}
+
 /* Publication entries: teaser on the left, text on the right */
 .pub {
   display: flex;
